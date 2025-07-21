@@ -34,7 +34,7 @@ spring:
     virtual:
       enabled: on
 server:
-  port: 3001
+  port: 3004
 
 email:
   from: amalitech.welfare@gmail.com
