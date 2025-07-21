@@ -1,0 +1,48 @@
+spring:
+  application:
+    name: basket-service
+  cloud:
+    consul:
+      config:
+        format: yaml
+  config:
+    import: consul://
+#  data:
+#    redis:
+#      host: localhost
+#      port: 6379
+#      database: 0
+#      connect-timeout: 15000
+#      client-type: lettuce
+#  grpc:
+#    client:
+#      basket-service:
+#        address: static://localhost:9090
+#        negotiation-type: plaintext
+#      channels:
+#        local:
+#          address: 0.0.0.0:9090
+#  rabbitmq:
+#    host: localhost
+#    port: 5672
+#    password: ${rb.password}
+#    username: ${rb.username}
+#management:
+#  endpoints:
+#    web:
+#      exposure:
+#        include: health,info,event-config,shutdown,configprops,beans
+#  endpoint:
+#    configprops:
+#      show-values: always
+#    health:
+#      show-values: always
+#      status:
+#        order: events-down, fatal, down, out-of-service, unknown, up
+#    shutdown:
+#      enabled: true
+#    info:
+#      env:
+#        enabled: true
+#server:
+#  port: ${server.port:3000}

@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: discount-service
+  cloud:
+    consul:
+      config:
+        format: yaml
+  config:
+    import: consul://
+#  jpa:
+#    database: postgresql
+#    database-platform: org.hibernate.dialect.PostgreSQLDialect
+#    show-sql: true
+#    hibernate:
+#      ddl-auto: update
+#  datasource:
+#    driver-class-name: org.postgresql.Driver
+#    url: jdbc:postgresql://localhost:5432/discount
+#    password: admin1234
+#    username: admin
+#
+#server:
+#  port: 3002

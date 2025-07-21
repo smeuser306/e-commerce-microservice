@@ -1,0 +1,8 @@
+-- Insert sample data into orders table
+INSERT INTO orders (id, username, total_price, first_name, last_name, email_address, address_line, country, state, zip_code, card_name, card_number, card_expiry, card_cvv, payment_method, created_at, updated_at)
+VALUES 
+('550e8400-e29b-41d4-a716-446655440000', 'john.doe', 125.50, 'John', 'Doe', 'john.doe@example.com', '123 Main St', 'USA', 'NY', '10001', 'John Doe', '4111111111111111', '12/25', '123', 1, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+('550e8400-e29b-41d4-a716-446655440001', 'jane.smith', 78.99, 'Jane', 'Smith', 'jane.smith@example.com', '456 Oak Ave', 'USA', 'CA', '90210', 'Jane Smith', '5555555555554444', '10/24', '456', 2, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+('550e8400-e29b-41d4-a716-446655440002', 'bob.johnson', 199.99, 'Bob', 'Johnson', 'bob.johnson@example.com', '789 Pine Rd', 'USA', 'TX', '75001', 'Bob Johnson', '3700000000000002', '08/26', '789', 1, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+('550e8400-e29b-41d4-a716-446655440003', 'alice.williams', 45.75, 'Alice', 'Williams', 'alice.williams@example.com', '321 Elm Blvd', 'USA', 'FL', '33101', 'Alice Williams', '6011000000000004', '03/27', '321', 2, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+('550e8400-e29b-41d4-a716-446655440004', 'david.brown', 299.50, 'David', 'Brown', 'david.brown@example.com', '654 Maple Dr', 'USA', 'IL', '60601', 'David Brown', '5105105105105100', '05/25', '654', 1, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);

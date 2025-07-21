@@ -1,0 +1,38 @@
+
+services:
+  order-db:
+    image: postgres
+
+  basket-db:
+    image: redis:alpine
+
+  rabbitmq:
+    image: rabbitmq:3-management-alpine
+
+  catalog-db:
+    image: mongo
+
+  consul-server:
+    image: consul:1.15.4
+
+  consul-client:
+    image: consul:1.15.4
+
+  consul-init:
+    image: consul:1.15.4
+
+  pgadmin:
+    image: dpage/pgadmin4
+
+  portainer:
+    image: portainer/portainer-ce
+
+networks:
+  cloud:
+    name: cloud
+
+volumes:
+  pgadmin_data:
+  portainer_data:
+  postgres_data:
+  mongo_data:

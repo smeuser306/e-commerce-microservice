@@ -1,0 +1,54 @@
+spring:
+  application:
+    name: ordering-service
+  cloud:
+    consul:
+      config:
+        format: yaml
+  config:
+    import: consul://
+#  jpa:
+#    database-platform: org.hibernate.dialect.PostgreSQLDialect
+#    hibernate:
+#      ddl-auto: create
+#    show-sql: true
+#  datasource:
+#    url: jdbc:postgresql://localhost:5432/orders
+#    driver-class-name: org.postgresql.Driver
+#    password: admin1234
+#    username: admin
+#  rabbitmq:
+#    host: localhost
+#    port: 5672
+#    username: guest
+#    password: guest
+#    listener:
+#      simple:
+#        retry:
+#          enabled: true
+#          initial-interval: 1000ms
+#          max-attempts: 3
+#          max-interval: 10000ms
+#          multiplier: 2.0
+#  threads:
+#    virtual:
+#      enabled: on
+#server:
+#  port: 3001
+#
+#email:
+#  from: amalitech.welfare@gmail.com
+#  from-name: freddie
+#  password: lyag lyaw ohpn oqes
+#  host: smtp.gmail.com
+#  port: 587
+#
+#logging:
+#  level:
+#    org:
+#      springframework:
+#        beans: DEBUG
+#        context.annotation: TRACE
+#
+#basketCheckoutQueue:
+#  name: basket.updated.queue

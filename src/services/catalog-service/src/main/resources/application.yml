@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: catalog-service
+  cloud:
+    consul:
+      config:
+        format: yaml
+  config:
+    import: consul://
+#  data:
+#    mongodb:
+#      username: admin
+#      password: admin
+#      authentication-database: admin
+#      port: 27017
+#      additional-hosts: localhost
+#      database: catalog
+#
+#server:
+#  port: 3002
